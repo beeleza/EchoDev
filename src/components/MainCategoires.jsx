@@ -48,7 +48,7 @@ const MainCategories = () => {
             <div className="bg-gray-100 p-2 rounded-full flex items-center gap-2">
                 {/* search icon */}
                 <FiSearch />
-                <input type="text" placeholder="search a post..." className="bg-transparent outline-0" />
+                <input type="text" placeholder="search a post..." className="bg-transparent focus:outline-none" />
             </div>
         </div>
     );
