@@ -1,28 +1,29 @@
 import { Link } from "react-router";
 import MainCategories from "../components/MainCategoires";
+import FeaturedPosts from "../components/FeaturedPosts";
 
 const Homepage = () => {
-    return (
-        <div className="mt-4 flex flex-col gap-4">
-            <div className="flex gap-4">
-                <Link to="/">Home</Link>
-                <span>•</span>
-                <span className="text-blue-800">Blogs & articles</span>
-            </div>
+  return (
+    <div className="mt-4 flex flex-col gap-4">
+      <div className="flex gap-4">
+        <Link to="/">Home</Link>
+        <span>•</span>
+        <span className="text-blue-800">Blogs & articles</span>
+      </div>
 
-            <div className="flex items-center justify-between">
-                <div className="">
-                    <h1 className="text-gray-800 text-2xl md:text-5xl lg:text-6xl font-bold">
-                        Welcome to EchoDev
-                    </h1>
+      <div className="flex items-center justify-between">
+        <div className="">
+          <h1 className="text-gray-800 text-2xl md:text-5xl lg:text-6xl font-bold">
+            Welcome to EchoDev
+          </h1>
 
-                    <p className="mt-8 text-md md:text-xl ">
-                        If you're passionate about technology, programming, you've come to
-                        the right place!
-                    </p>
-                </div>
+          <p className="mt-8 text-md md:text-xl ">
+            If you're passionate about technology, programming, you've come to
+            the right place!
+          </p>
+        </div>
 
-                <Link to="write" className="hidden md:block relative">
+        <Link to="write" className="hidden md:block relative">
           <svg
             viewBox="0 0 200 200"
             width="200"
@@ -59,11 +60,13 @@ const Homepage = () => {
             </svg>
           </button>
         </Link>
-            </div>
+      </div>
 
-            <MainCategories/>
-        </div>
-    );
+      <MainCategories />
+
+      <FeaturedPosts />
+    </div>
+  );
 };
 
 export default Homepage;
