@@ -7,6 +7,8 @@ import { Link } from "react-router";
 const Navbar = () => {
     const [open, setOpen] = useState(false);
 
+    const logoTitle = "<EchoDev/>";
+
     const handClose = () => setOpen(false);
 
     return(
@@ -14,7 +16,7 @@ const Navbar = () => {
             {/* LOGO */}
             <Link to="/" className="flex items-center ga-4 text-2xl font-bold">
                 {/* <img src="/logo.png" className="w-8 h-8" alt="logo" /> */}
-                <span>EchoDev</span>
+                <span>{logoTitle}</span>
             </Link>
 
             {/* MOBILE MENU */}
