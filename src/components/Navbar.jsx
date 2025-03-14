@@ -29,7 +29,7 @@ const Navbar = () => {
                     { open ? <MdClose /> : <RiMenu3Line /> }
                 </div>
 
-                <div className={`bg-gray-400 z-50 w-full h-screen flex flex-col items-center justify-center gap-8 font-medium text-lg absolute top-16 transition-all ease-in-out ${open ? "-right-0" : "-right-[100%]"}`}>
+                <div className={`w-full h-screen z-50 flex flex-col bg-[#e6e6ff] items-center justify-center gap-8 font-medium text-lg fixed top-16 transition-all ease-in-out ${open ? "-right-0" : "-right-[100%]"}`}>
                     <Link to="/" onClick={handClose}>Home</Link>
                     <Link to="/" onClick={handClose}>Treding</Link>
                     <Link to="/" onClick={handClose}>Most Popular</Link>
